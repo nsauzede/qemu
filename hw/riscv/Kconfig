@@ -110,6 +110,12 @@ config SIFIVE_U
     select SSI_SD
     select UNIMP
 
+config DARKRISCV
+    bool
+    default y
+    depends on RISCV32
+    select DARKRISCV_SOC
+
 config SPIKE
     bool
     default y
